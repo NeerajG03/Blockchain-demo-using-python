@@ -38,6 +38,7 @@ Follow these steps to get HealthVaultChain up and running:
 ## Contributing 🤝
 
 If you'd like to contribute to this project or have suggestions for improvement, please check out our [contribution guidelines](CONTRIBUTING.md).
+Contibution guidelines brought to you by the **US Mango**🥭.
 
 
 ## License 📝
