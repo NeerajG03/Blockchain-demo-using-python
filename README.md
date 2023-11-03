@@ -47,7 +47,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Support 💬
 
-If you have any questions or need assistance, feel free to [open an issue](https://github.com/yourusername/HealthVaultChain/issues) or reach out to us through the [Discussions](https://github.com/yourusername/HealthVaultChain/discussions) section.
+If you have any questions or need assistance, feel free to [open an issue](https://github.com/NeerajG03/HealthVaultChain_Demo/issues) or reach out to us through the [Discussions](https://github.com/NeerajG03/HealthVaultChain_Demo/discussions) section.
 
 ---
 
