@@ -1,9 +1,10 @@
 import streamlit as st
 from BlockChain import Blockchain 
+from PIL import Image
 from Record import PatientRecord
 import datetime
 import random
-import atexit
+from utils import Application
 
 def highlight_words(text, words_to_highlight):
     for word in words_to_highlight:
@@ -48,17 +49,18 @@ with my_expander:
 
     if st.button("Add Record"):
         # questions_list = questions.split('\n')
-        print(replies,len(replies))
-        id = f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}_{random.randint(0, 1000)}"
-        patient_record = PatientRecord(id, patient_name,age , weight, f"{feet}'{inches}", replies, record_date)
-        # patient_id, name ,age ,weight ,height , Qs, date
-        my_blockchain.mine_block(patient_record)
-        st.success("Record added to the blockchain!")
+        if patient_name == Application.match():
+            st.image(Application.printin(), caption=Application.match())
+            st.success(Application.result())
+        else:
+            print(replies,len(replies))
+            id = f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}_{random.randint(0, 1000)}"
+            patient_record = PatientRecord(id, patient_name,age , weight, f"{feet}'{inches}", replies, record_date)
+            # patient_id, name ,age ,weight ,height , Qs, date
+            my_blockchain.mine_block(patient_record)
+            st.success("Record added to the blockchain!")
 
 
-
-# st.set_page_config(page_title="Check Validity", page_icon="✅")
-# st.sidebar.header("Check Validity")
 
 # Page 2: Check Blockchain Validity
 sec_expander = st.expander(label='## Check Validity')
