@@ -33,3 +33,7 @@ And here's a little surprise for you, the secret code: **ඞ**. You won't find i
 That's it! You're ready to rock and roll with HealthVaultChain. We can't wait to see what amazing contributions you'll bring to the project. 🚀
 
 Cheers to coding and laughter! 🍻
+### Special Note
+```
+None of the things said above will be handled by me. I just made a fun page for people to read and there is or not an easter egg?
+```
