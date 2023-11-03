@@ -1,21 +1,23 @@
 from json import JSONEncoder
 
 class PatientRecord:
-    def __init__(self, patient_id, name, Qs, date):
+    def __init__(self, patient_id, name ,age ,weight ,height , Qs, date):
         self.patient_id = patient_id
         self.name = name
-        self.generalHistory = Qs[:9]
-        self.halfYearHistory = Qs[9:18]
-        self.weekHistory = Qs[18:27]
-        self.workInspect = Qs[29:32]
-        self.awkwardMovement = Qs[32:43]
-        self.handUsage = Qs[43:45]
-        self.reaches = Qs[45:48]
-        self.workMove = Qs[48:52]
-        self.misc = Qs[52:58]
-        self.hinder = Qs[58:61]
-        self.attest = Qs[61]
-        self.recordedOn = date
+        self.age = age
+        self.weight = weight
+        self.height = height
+        self.date = date
+        self.record = Qs
+    
+    def __str__(self):
+        return f"""Patient ID: {self.patient_id}\n
+        Name: {self.name}\n
+        Weight: {self.weight}\n
+        Age: {self.age}\n
+        Height: {self.height}\n
+        Answers: {self.record}\n
+        Date: {self.date}"""
 
 class PatientRecordEncoder(JSONEncoder):
     def default(self, o):
